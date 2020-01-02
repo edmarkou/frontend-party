@@ -1,0 +1,143 @@
+.login-logo {
+  margin-bottom: 70px;
+}
+
+.user-logo {
+  height: 16px;
+  width: 14px;
+  margin-right: 15px;
+}
+
+.lock-logo {
+  height: 18px;
+  width: 14px;
+  margin-right: 15px;
+}
+
+.login-container {
+  background-image: url("../assets/images/login-bg.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #0b0f27;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  width: 90%;
+  max-width: 359px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input-container {
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  padding: 0px 25px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.login-input-container path {
+  fill: #ccc;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.login-input-container:focus-within path {
+  fill: #999;
+}
+
+.login-input-container--error path {
+  fill: #cc0000;
+  opacity: 0.5;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.login-input-container--error:focus-within path {
+  fill: #cc0000;
+  opacity: 1;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.login-input {
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 6px 0px 0px 15px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-input:focus {
+  color: #999;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-input::placeholder {
+  color: #b3b3b3;
+}
+
+.login-input::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+.login-input--error::placeholder {
+  color: #cc0000 !important;
+  opacity: 0.5;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.login-input--error::-webkit-input-placeholder {
+  color: #cc0000 !important;
+  opacity: 0.5;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.login-button {
+  border-radius: 5px;
+  cursor: pointer;
+  height: 56px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #9fd533;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-button:hover {
+  background-color: #86b300;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
